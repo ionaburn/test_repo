@@ -5,10 +5,12 @@ public class Greeter {
 
   private Locale locale;
   private String name;
+  private String country;
 
   public Greeter(String language, String country, String name) {
     locale = new Locale(language, country);
     this.name = name;
+    this.country = country;
   }
 
   public String sayHello() {
